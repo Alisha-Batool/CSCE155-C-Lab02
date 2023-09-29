@@ -1,5 +1,5 @@
 /**
- * Author: Chris Bourke
+ * Author: Alisha
  * 
  * This program prompts the user to enter the
  * base and the height of a triangle and computes
@@ -7,7 +7,7 @@
  *  1/2 * base * height
  *
  */
-#include <stdlib.h>
+#include <stdio.h>
 #include <stdio.h>
 
 int main(int argc, char **argv) {
