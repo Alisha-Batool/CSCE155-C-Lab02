@@ -1,5 +1,5 @@
 /**
- * Author: Chris Bourke
+ * Author: Alisha
  *
  * This program outputs data on the limits of various
  * data types.
