@@ -51,9 +51,10 @@ int main(int argc, char **argv) {
 
   int years = (int) (diff / (double) (365.25 * 24 * 60 * 60));
   diff -= years * (365.25 * 24 * 60 * 60);
+
   int days = diff / (24 * 60 * 60);
   int weeks = days / 7;
-  days = days % 7;
+   days = days % 7;
 
   printf("Hello, %s.  You are %d years, %d weeks, and %d days old today.\n", name, years, weeks, days);
 
