@@ -4,7 +4,7 @@ int main(int argc, char**argv)
 {
     float tempCelcius= atof(argv[1]);
     printf("%f celcius is %f fahreheit \n " , tempCelcius);
-    ((tempCelcius * 9/5)+ 32);
+    (( tempCelcius * 9/5 ) + 32);
     if(argc>1){
         printf("%f celcius is %f fahreheit \n " , tempCelcius);
     }else{
