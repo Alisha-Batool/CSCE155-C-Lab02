@@ -15,8 +15,7 @@
 
 int main(int argc, char **argv) {
 
-  if(argc != 5) 
-  {
+  if(argc != 5) {
     printf("ERROR: invalid number of command line inputs\n");
     printf("       Usage: birthday FIRSTNAME YEAR MONTH DAY\n");
     exit(1);
@@ -42,9 +41,9 @@ int main(int argc, char **argv) {
   bday.tm_sec = 0;
   bday.tm_min = 0;
   bday.tm_hour = 0;
-  bday.tm_isdst = -1; 
-  //let system determine DST or not
+  bday.tm_isdst = -1; //let system determine DST or not
   ptrNow = localtime(&now);
+
   strftime(str,80,"%Y/%m/%d",ptrNow);
   printf("Today is %s\n", str);
   strftime(str,80,"%Y/%m/%d",&bday);
@@ -54,11 +53,13 @@ int main(int argc, char **argv) {
   double diff = difftime(now, bdayT);
 
   int years = (int) (diff / (double) (365.25 * 24 * 60 * 60));
+
   diff -= years * (365.25 * 24 * 60 * 60);
 
-  int days = diff / (24 * 60 * 60);
+  int days = diff /(24 * 60 * 60);
   int weeks = days / 7;
-   days = days % 7;
+
+  days = days % 7;
 
   printf("Hello, %s.  You are %d years, %d weeks, and %d days old today.\n", name, years, weeks, days);
 
