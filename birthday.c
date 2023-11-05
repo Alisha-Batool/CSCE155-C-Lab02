@@ -42,12 +42,17 @@ int main(int argc, char **argv) {
   bday.tm_isdst = -1; 
   //let system determine DST or not
   ptrNow = localtime(&now);
+
   strftime(str,80,"%Y/%m/%d",ptrNow);
+
   printf("Today is %s\n", str);
+
   strftime(str,80,"%Y/%m/%d",&bday);
+
   printf("Your birthday was %s\n", str);
 
   time_t bdayT = mktime(&bday);
+  
   long diff = (long) difftime(now, bdayT);
 
   int years = diff / (365.25 * 24 * 60 * 60);
