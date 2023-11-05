@@ -14,13 +14,17 @@ int main(int argc, char **argv) {
 
   char name[100];
   printf("Please Enter Your First Name (no spaces) followed by ENTER: ");
+
   scanf("%s", name);
+
   int year = 0;
   printf("Enter the year in which you were born: ");
   scanf("%d", &year);
+  
   int month = 0;
   printf("Enter the month in which you were born (1-12): ");
   scanf("%d", &month);
+  
   int day = 0;
   printf("Enter the day of the month in which you were born (1-31): ");
   scanf("%d", &day);
@@ -53,8 +57,8 @@ int main(int argc, char **argv) {
 
   long diff = (long) difftime(now, bdayT);
 
-  int years = diff / (365 * 24 * 60 * 60);
-  diff -= years * (365 * 24 * 60 * 60);
+  int years = diff / (365.25 * 24 * 60 * 60);
+  diff -= years * (365.25 * 24 * 60 * 60);
   int days = diff / (24 * 60 * 60);
 
   int weeks = days / 7;
