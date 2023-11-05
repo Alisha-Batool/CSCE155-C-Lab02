@@ -1,15 +1,16 @@
 /**
- * Author: Alisha
- *
+ * Author: Alisha 
  * This program outputs data on the limits of various
  * data types.
  */
+// add header files
 #include <stdlib.h>
 #include <stdio.h>
 #include <limits.h>
 #include <float.h>
-
-int main(int argc, char **argv) {
+// command line argument program
+int main(int argc, char **argv) 
+{
 
   //character types
   printf("\nData type: character type.\n");
@@ -20,6 +21,7 @@ int main(int argc, char **argv) {
   printf("Minimum value for char: %d.\n", CHAR_MIN);
   printf("Maximum value for char: %d.\n", CHAR_MAX);
   printf("Size of signed char: %ld byte.\n\n", sizeof(signed char));
+
 
   //integers
   printf("Data type: integer.\n");
@@ -41,6 +43,7 @@ int main(int argc, char **argv) {
   printf("Minimum value for unsigned long: %d\n", 0 );
   printf("Maximum value for unsigned long: %lu\n", ULONG_MAX );
   printf("Size of unsigned long: %ld bytes.\n\n", sizeof(unsigned long));
+
 
   //floating point types
   printf("Data type: floating-point.\n");
