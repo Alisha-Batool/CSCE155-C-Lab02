@@ -16,13 +16,13 @@ int main(int argc, char **argv) {
 
   printf("Please enter the base of a triangle: ");
 
-  scanf("%lf", &base);
+  scanf("%.lf", &base);
 
   printf("Please enter the height of a triangle: ");
 
-  scanf("%lf", &height);
+  scanf("%.lf", &height);
 
-  area = 0.5 * base * height;
+  area = (1/2) * base * height;
 
   printf("The area is %f square units.\n", area);
 
