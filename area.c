@@ -7,7 +7,7 @@
  *  1/2 * base * height
  *
  */
-#include <stdio.h>
+//include headerfile
 #include <stdio.h>
 
 int main(int argc, char **argv) {
